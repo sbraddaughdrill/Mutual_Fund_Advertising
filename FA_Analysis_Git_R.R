@@ -30,7 +30,6 @@ memory.limit(size = 8183)
 
 # Set location (1=HOME,2=WORK,3=CORALSEA FROM HOME,4=CORALSEA FROM WORK) Location <- 1
 Location <- 2
-# Location <- 3 Location <- 4
 
 if (Location == 1) {
   setwd("")
