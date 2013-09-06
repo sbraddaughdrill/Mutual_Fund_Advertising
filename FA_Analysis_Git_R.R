@@ -29,28 +29,28 @@ options(max.print = 500)
 memory.limit(size = 8183)
 
 # Set location (1=HOME,2=WORK,3=CORALSEA FROM HOME,4=CORALSEA FROM WORK) Location <- 1
-Location <- 2
+Location <- 1
 
 if (Location == 1) {
-  setwd("")
+  #setwd("")
   input_directory <- normalizePath("", winslash = "\\", mustWork = NA)
   output_directory <- normalizePath("", winslash = "\\", mustWork = NA)
   function_directory <- normalizePath("C:/Users/Brad/Dropbox/Research/R/", winslash = "\\", mustWork = NA)
   
 } else if (Location == 2) {
-  setwd("H:/Research/Mutual_Fund_Advertising/R/")
+  #setwd("H:/Research/Mutual_Fund_Advertising/R/")
   input_directory <- normalizePath("H:/Research/Mutual_Fund_Advertising/Data/", winslash = "\\", mustWork = NA)
   output_directory <- normalizePath("C:/Users/bdaughdr/Dropbox/Research/Fund_Advertising/R/", winslash = "\\", mustWork = NA)
   function_directory <- normalizePath("C:/Users/bdaughdr/Dropbox/Research/R/", winslash = "\\", mustWork = NA)
   
 } else if (Location == 3) {
-  setwd("H:/Research/Mutual_Fund_Advertising/R/")
+  #setwd("H:/Research/Mutual_Fund_Advertising/R/")
   input_directory <- normalizePath("H:/Research/Mutual_Fund_Advertising/Data/", winslash = "\\", mustWork = NA)
   output_directory <- normalizePath("//tsclient/C/Users/Brad/Dropbox/Research/Fund_Advertising/R/", winslash = "\\", mustWork = NA)
   function_directory <- normalizePath("//tsclient/C/Users/Brad/Dropbox/Research/R/", winslash = "\\", mustWork = NA)
   
 } else if (Location == 4) {
-  setwd("H:/Research/Mutual_Fund_Advertising/R/")
+  #setwd("H:/Research/Mutual_Fund_Advertising/R/")
   input_directory <- normalizePath("H:/Research/Mutual_Fund_Advertising/Data/", winslash = "\\", mustWork = NA)
   output_directory <- normalizePath("//tsclient/C/Users/bdaughdr/Dropbox/Research/Fund_Advertising/R/", winslash = "\\", mustWork = NA)
   function_directory <- normalizePath("//tsclient/C/Users/bdaughdr/Dropbox/Research/R/", winslash = "\\", mustWork = NA)
