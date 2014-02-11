@@ -5,7 +5,7 @@
 # Date: 07.10.2013 
 # Purpose: Analyze Fund Advertising
 
-############################################################################### INITIAL SETUP;
+###############################################################################
 cat("SECTION: INITIAL SETUP", "\n")
 ############################################################################### 
 
@@ -62,7 +62,7 @@ if (Location == 1) {
 rm(Location)
 
 
-############################################################################### FUNCTIONS;
+###############################################################################
 cat("SECTION: FUNCTIONS", "\n")
 ############################################################################### 
 
@@ -404,7 +404,7 @@ extract.plm2 <- function(model, vcov. = NULL, ...) {
   return(res)
 }
 
-############################################################################### LIBRARIES;
+###############################################################################
 cat("SECTION: LIBRARIES", "\n")
 ############################################################################### 
 
@@ -418,7 +418,7 @@ external_packages <- c("AER", "ca", "compare", "cwhmisc", "data.table", "descr",
 invisible(unlist(sapply(external_packages, load_external_packages, repo_str = repo, simplify = FALSE, USE.NAMES = FALSE)))
 installed_packages <- list_installed_packages(external_packages)
 
-############################################################################### PREALLOCATE DATA;
+###############################################################################
 cat("SECTION: PREALLOCATE DATA", "\n")
 ############################################################################### 
 
@@ -468,12 +468,7 @@ for (j in 1:nrow(files)) {
   
   row.names(sample_data) <- seq(nrow(sample_data))
   
-  
-  ############################################################################### OUTPUT DATA;
-  
   # write.csv(sample_data, file=paste(output_directory,file=files[j,1],sep=''),row.names=FALSE)
-  
-  ############################################################################### CREATE PROGRESS OUTPUTS;
   
   progress_function(outer_loop_count = j, outer_loop_start_val = 1, outer_loop_end_val = nrow(files), inner_loop_count = 1, inner_loop_start_val = 1, 
                     inner_loop_end_val = 1)
